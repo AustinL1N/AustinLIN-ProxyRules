@@ -15,16 +15,16 @@ AustinLIN-ProxyRules/
 └── README.md
 ```
 
-- [QuantumultX/Claude/Claude.list](QuantumultX/Claude/Claude.list)：使用 Quantumult X 原生三列格式：规则类型、匹配条件、策略。文件使用 `proxy` 作为占位策略，订阅设置可覆盖为所需策略组。
+- [QuantumultX/Claude/Claude.list](QuantumultX/Claude/Claude.list)：使用 Quantumult X 原生三列格式：规则类型、匹配条件、策略。文件使用 `claude` 作为占位策略，订阅设置可覆盖为所需策略组。
 - [Clash/Claude/Claude.list](Clash/Claude/Claude.list)：保留原始 `DOMAIN / DOMAIN-SUFFIX / DOMAIN-KEYWORD / IP` 格式及 `no-resolve` 参数，不写入策略组。
 
 ## Quantumult X 订阅
 
 订阅地址：[Quantumult X Claude 规则](https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/main/QuantumultX/Claude/Claude.list)。
 
-在 Quantumult X 中添加上述资源，并在资源设置中选择所需策略组（例如 `AI`），对应配置参数为 `force-policy=AI`。设置后将覆盖文件中的占位策略 `proxy`。
+在 Quantumult X 中添加上述资源，并在资源设置中选择所需策略组（例如 `AI`），对应配置参数为 `force-policy=AI`。设置后将覆盖文件中的占位策略 `claude`。
 
-Quantumult X 原生规则不能省略第三列策略字段；仅写 `host-suffix, anthropic.com` 会出现 `Invalid Line`。文件保持 `host-suffix, anthropic.com, proxy` 格式，不固定绑定你的 `AI` 分组。
+Quantumult X 原生规则不能省略第三列策略字段；仅写 `host-suffix, anthropic.com` 会出现 `Invalid Line`。文件保持 `host-suffix, anthropic.com, claude` 格式，不固定绑定你的 `AI` 分组。
 
 例如，在现有配置的 `[filter_remote]` 段添加：
 

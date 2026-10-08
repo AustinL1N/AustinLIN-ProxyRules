@@ -1,39 +1,39 @@
 # NAME: Claude
 # FORMAT: Quantumult X
-# POLICY: proxy（占位策略，可由订阅设置中的 force-policy 覆盖）
+# POLICY: claude（占位策略，可由订阅设置中的 force-policy 覆盖）
 # TOTAL: 22
 # 用户提供的规则；完整保留所有匹配条件。
 
 # 核心域名（anthropic.com 已覆盖其所有子域名）
-host-suffix, anthropic.com, proxy
-host-suffix, claude.ai, proxy
-host-suffix, claude.com, proxy
-host-suffix, clau.de, proxy
-host-suffix, claudemcpclient.com, proxy
-host-suffix, claudemcpcontent.com, proxy
-host-suffix, claudeusercontent.com, proxy
+host-suffix, anthropic.com, claude
+host-suffix, claude.ai, claude
+host-suffix, claude.com, claude
+host-suffix, clau.de, claude
+host-suffix, claudemcpclient.com, claude
+host-suffix, claudemcpcontent.com, claude
+host-suffix, claudeusercontent.com, claude
 
 # CDN 和静态资源
-host, servd-anthropic-website.b-cdn.net, proxy
-host, anthropic.com.cdn.cloudflare.net, proxy
+host, servd-anthropic-website.b-cdn.net, claude
+host, anthropic.com.cdn.cloudflare.net, claude
 
 # 认证 / 内容
-host, anthropic.auth0.com, proxy
-host, anthropic-com.ghost.io, proxy
+host, anthropic.auth0.com, claude
+host, anthropic-com.ghost.io, claude
 
 # 监控和遥测（关键词规则也会匹配其他包含该词的域名）
-host-suffix, sentry.io, proxy
-host-suffix, statsigapi.net, proxy
-host, browser-intake-us5-datadoghq.com, proxy
-host-keyword, datadog, proxy
-host-keyword, sift, proxy
+host-suffix, sentry.io, claude
+host-suffix, statsigapi.net, claude
+host, browser-intake-us5-datadoghq.com, claude
+host-keyword, datadog, claude
+host-keyword, sift, claude
 
 # 客服 / 第三方 widget
-host-suffix, intercom.io, proxy
-host-suffix, intercomcdn.com, proxy
-host, cdn.usefathom.com, proxy
+host-suffix, intercom.io, claude
+host-suffix, intercomcdn.com, claude
+host, cdn.usefathom.com, claude
 
 # IP 段 / ASN 兜底（使用 Quantumult X 原生格式）
-ip-cidr, 160.79.104.0/21, proxy
-ip6-cidr, 2607:6bc0::/32, proxy
-ip-asn, 399358, proxy
+ip-cidr, 160.79.104.0/21, claude
+ip6-cidr, 2607:6bc0::/32, claude
+ip-asn, 399358, claude
