@@ -2,24 +2,45 @@
 
 个人维护的 Claude 分流规则，共 22 条，按用户提供的列表整理。
 
-## 文件
+## 目录
 
-- [Claude.list](Claude.list)：使用 Quantumult X 风格的规则类型，每条规则只保留类型和匹配条件，策略组由订阅 App 设置。
-- [Claude.rules](Claude.rules)：保留原始 `DOMAIN / DOMAIN-SUFFIX / DOMAIN-KEYWORD / IP` 格式，供后续维护或转换。
+```text
+Claude-Rules/
+├── QuantumultX/
+│   └── Claude/
+│       └── Claude.list
+├── Clash/
+│   └── Claude/
+│       └── Claude.list
+└── README.md
+```
+
+- [QuantumultX/Claude/Claude.list](QuantumultX/Claude/Claude.list)：使用 Quantumult X 风格的规则类型，每条规则只保留类型和匹配条件，策略组由订阅 App 设置。
+- [Clash/Claude/Claude.list](Clash/Claude/Claude.list)：保留原始 `DOMAIN / DOMAIN-SUFFIX / DOMAIN-KEYWORD / IP` 格式及 `no-resolve` 参数，不写入策略组。
 
 ## Quantumult X 订阅
 
-订阅地址：[Claude.list 原始文件](https://raw.githubusercontent.com/AustinL1N/Claude-Rules/main/Claude.list)。
+订阅地址：[Quantumult X Claude 规则](https://raw.githubusercontent.com/AustinL1N/Claude-Rules/main/QuantumultX/Claude/Claude.list)。
 
 在订阅 App 中添加上述链接，并在 App 中选择所需策略组。规则文件不再指定 `AI` 或其他策略组。
 
-`Claude.list` 是独立规则资源，不包含 `[filter_local]`、`[filter_remote]` 或最终直连规则。
+`QuantumultX/Claude/Claude.list` 是独立规则资源，不包含 `[filter_local]`、`[filter_remote]` 或最终直连规则。
+
+## Clash / Mihomo 订阅
+
+规则地址：[Clash Claude 规则](https://raw.githubusercontent.com/AustinL1N/Claude-Rules/main/Clash/Claude/Claude.list)。
+
+在支持该格式的 Clash / Mihomo 客户端中，将规则资源设为 `behavior: classical`、`format: text`，再在客户端配置中指定策略组。配置格式参考：[Mihomo 规则集合文档](https://wiki.metacubex.one/config/rule-providers/)。
+
+## 地址迁移
+
+仓库根目录的 `Claude.list` 已移到 `QuantumultX/Claude/Claude.list`，`Claude.rules` 已移到 `Clash/Claude/Claude.list`。已订阅旧地址的客户端需要替换为上面的新地址。
 
 ## 维护
 
-编辑 GitHub 默认分支中的 `Claude.list` 并提交，订阅地址保持不变。客户端下次更新资源时获取新版本；需要立即生效时可手动更新资源。
+编辑 GitHub 默认分支中对应客户端目录下的 `Claude/Claude.list` 并提交。在文件路径不变的情况下，订阅地址保持不变。客户端下次更新资源时获取新版本；需要立即生效时可手动更新资源。
 
-`Claude.rules` 与 `Claude.list` 为分别维护的文件，修改匹配条件时应同步更新，两者没有自动转换流程。
+两种客户端格式为分别维护的文件，修改匹配条件时应同步更新，两者没有自动转换流程。
 
 ## 格式与范围说明
 
