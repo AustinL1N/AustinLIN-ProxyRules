@@ -1,6 +1,6 @@
 # AustinLIN-ProxyRules
 
-个人维护的代理分流规则，按客户端和规则集分类：Claude 规则 22 条，Austin-PrivateRules 规则 27 条。
+个人维护的代理分流规则，按客户端和规则集分类：Claude 规则 22 条，Austin-PrivateRules 规则 31 条。
 
 ## 目录
 
@@ -18,7 +18,7 @@ AustinLIN-ProxyRules/
 ```
 
 - [QuantumultX/Claude/Claude.list](QuantumultX/Claude/Claude.list)：使用 Quantumult X 原生三列格式：规则类型、匹配条件、策略。文件使用 `claude` 作为占位策略，订阅设置可覆盖为所需策略组。
-- [QuantumultX/Austin-PrivateRules/Austin-PrivateRules.list](QuantumultX/Austin-PrivateRules/Austin-PrivateRules.list)：个人规则 27 条，保留提供时的匹配顺序和策略组。
+- [QuantumultX/Austin-PrivateRules/Austin-PrivateRules.list](QuantumultX/Austin-PrivateRules/Austin-PrivateRules.list)：个人规则 31 条，保留提供时的匹配顺序和策略组。
 - [Clash/Claude/Claude.list](Clash/Claude/Claude.list)：保留原始 `DOMAIN / DOMAIN-SUFFIX / DOMAIN-KEYWORD / IP` 格式及 `no-resolve` 参数，不写入策略组。
 
 ## Quantumult X Claude 订阅
