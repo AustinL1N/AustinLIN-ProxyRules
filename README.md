@@ -15,14 +15,24 @@ AustinLIN-ProxyRules/
 └── README.md
 ```
 
-- [QuantumultX/Claude/Claude.list](QuantumultX/Claude/Claude.list)：使用 Quantumult X 风格的规则类型，每条规则只保留类型和匹配条件，策略组由订阅 App 设置。
+- [QuantumultX/Claude/Claude.list](QuantumultX/Claude/Claude.list)：使用 Quantumult X 原生三列格式：规则类型、匹配条件、策略。文件使用 `proxy` 作为占位策略，订阅设置可覆盖为所需策略组。
 - [Clash/Claude/Claude.list](Clash/Claude/Claude.list)：保留原始 `DOMAIN / DOMAIN-SUFFIX / DOMAIN-KEYWORD / IP` 格式及 `no-resolve` 参数，不写入策略组。
 
 ## Quantumult X 订阅
 
 订阅地址：[Quantumult X Claude 规则](https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/main/QuantumultX/Claude/Claude.list)。
 
-在订阅 App 中添加上述链接，并在 App 中选择所需策略组。规则文件不再指定 `AI` 或其他策略组。
+在 Quantumult X 中添加上述资源，并在资源设置中选择所需策略组（例如 `AI`），对应配置参数为 `force-policy=AI`。设置后将覆盖文件中的占位策略 `proxy`。
+
+Quantumult X 原生规则不能省略第三列策略字段；仅写 `host-suffix, anthropic.com` 会出现 `Invalid Line`。文件保持 `host-suffix, anthropic.com, proxy` 格式，不固定绑定你的 `AI` 分组。
+
+例如，在现有配置的 `[filter_remote]` 段添加：
+
+```ini
+https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/main/QuantumultX/Claude/Claude.list, tag=Claude, force-policy=AI, enabled=true
+```
+
+如果使用其他分组，请替换 `force-policy` 的值，并确保该分组已存在。
 
 `QuantumultX/Claude/Claude.list` 是独立规则资源，不包含 `[filter_local]`、`[filter_remote]` 或最终直连规则。
 
