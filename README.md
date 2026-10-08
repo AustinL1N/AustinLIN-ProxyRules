@@ -1,11 +1,11 @@
-# AustinLIN-rules
+# AustinLIN-ProxyRules
 
 个人维护的 Claude 分流规则，共 22 条，按用户提供的列表整理。
 
 ## 目录
 
 ```text
-AustinLIN-rules/
+AustinLIN-ProxyRules/
 ├── QuantumultX/
 │   └── Claude/
 │       └── Claude.list
@@ -20,7 +20,7 @@ AustinLIN-rules/
 
 ## Quantumult X 订阅
 
-订阅地址：[Quantumult X Claude 规则](https://raw.githubusercontent.com/AustinL1N/AustinLIN-rules/main/QuantumultX/Claude/Claude.list)。
+订阅地址：[Quantumult X Claude 规则](https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/main/QuantumultX/Claude/Claude.list)。
 
 在订阅 App 中添加上述链接，并在 App 中选择所需策略组。规则文件不再指定 `AI` 或其他策略组。
 
@@ -28,7 +28,7 @@ AustinLIN-rules/
 
 ## Clash / Mihomo 订阅
 
-规则地址：[Clash Claude 规则](https://raw.githubusercontent.com/AustinL1N/AustinLIN-rules/main/Clash/Claude/Claude.list)。
+规则地址：[Clash Claude 规则](https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/main/Clash/Claude/Claude.list)。
 
 在支持该格式的 Clash / Mihomo 客户端中，将规则资源设为 `behavior: classical`、`format: text`，再在客户端配置中指定策略组。配置格式参考：[Mihomo 规则集合文档](https://wiki.metacubex.one/config/rule-providers/)。
 
