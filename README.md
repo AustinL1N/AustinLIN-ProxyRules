@@ -20,16 +20,20 @@ AustinLIN-ProxyRules/
 
 ## Quantumult X 订阅
 
-订阅地址：[Quantumult X Claude 规则](https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/main/QuantumultX/Claude/Claude.list)。
+订阅地址：[Quantumult X Claude 规则](https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/refs/heads/main/QuantumultX/Claude/Claude.list)。
+
+```text
+https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/refs/heads/main/QuantumultX/Claude/Claude.list
+```
 
 在 Quantumult X 中添加上述资源，并在资源设置中选择所需策略组（例如 `AI`），对应配置参数为 `force-policy=AI`。设置后将覆盖文件中的占位策略 `claude`。
 
-Quantumult X 原生规则不能省略第三列策略字段；仅写 `host-suffix, anthropic.com` 会出现 `Invalid Line`。文件保持 `host-suffix, anthropic.com, claude` 格式，不固定绑定你的 `AI` 分组。
+Quantumult X 原生规则不能省略第三列策略字段；仅写 `HOST-SUFFIX,anthropic.com` 会出现 `Invalid Line`。文件保持 `HOST-SUFFIX,anthropic.com,claude` 格式，不固定绑定你的 `AI` 分组。
 
 例如，在现有配置的 `[filter_remote]` 段添加：
 
 ```ini
-https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/main/QuantumultX/Claude/Claude.list, tag=Claude, force-policy=AI, enabled=true
+https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/refs/heads/main/QuantumultX/Claude/Claude.list, tag=Claude, force-policy=AI, enabled=true
 ```
 
 如果使用其他分组，请替换 `force-policy` 的值，并确保该分组已存在。
@@ -38,7 +42,11 @@ https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/main/Quantumult
 
 ## Clash / Mihomo 订阅
 
-规则地址：[Clash Claude 规则](https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/main/Clash/Claude/Claude.list)。
+规则地址：[Clash Claude 规则](https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/refs/heads/main/Clash/Claude/Claude.list)。
+
+```text
+https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/refs/heads/main/Clash/Claude/Claude.list
+```
 
 在支持该格式的 Clash / Mihomo 客户端中，将规则资源设为 `behavior: classical`、`format: text`，再在客户端配置中指定策略组。配置格式参考：[Mihomo 规则集合文档](https://wiki.metacubex.one/config/rule-providers/)。
 
