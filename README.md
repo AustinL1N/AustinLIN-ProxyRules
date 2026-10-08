@@ -4,20 +4,14 @@
 
 ## 文件
 
-- [Claude.list](Claude.list)：Quantumult X 远程分流文件，默认策略组为 `AI`。
+- [Claude.list](Claude.list)：使用 Quantumult X 风格的规则类型，每条规则只保留类型和匹配条件，策略组由订阅 App 设置。
 - [Claude.rules](Claude.rules)：保留原始 `DOMAIN / DOMAIN-SUFFIX / DOMAIN-KEYWORD / IP` 格式，供后续维护或转换。
 
 ## Quantumult X 订阅
 
 订阅地址：[Claude.list 原始文件](https://raw.githubusercontent.com/AustinL1N/Claude-Rules/main/Claude.list)。
 
-在 Quantumult X 的「分流 → 资源」中添加上述链接，策略选择 `AI`。本地配置中需要已有名为 `AI` 的策略组。
-
-也可以把下面一行加入现有配置的 `[filter_remote]` 段：
-
-```ini
-https://raw.githubusercontent.com/AustinL1N/Claude-Rules/main/Claude.list, tag=Claude, force-policy=AI, enabled=true
-```
+在订阅 App 中添加上述链接，并在 App 中选择所需策略组。规则文件不再指定 `AI` 或其他策略组。
 
 `Claude.list` 是独立规则资源，不包含 `[filter_local]`、`[filter_remote]` 或最终直连规则。
 
