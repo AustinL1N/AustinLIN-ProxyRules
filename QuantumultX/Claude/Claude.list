@@ -1,39 +1,45 @@
 # NAME: Claude
-# FORMAT: Quantumult X
-# POLICY: claude（占位策略，可由订阅设置中的 force-policy 覆盖）
+# AUTHOR: AustinL1N
+# REPO: https://github.com/AustinL1N/AustinLIN-ProxyRules
+# UPDATED: 2026-10-08 15:05:01
+# HOST: 6
+# HOST-KEYWORD: 2
+# HOST-SUFFIX: 11
+# IP-ASN: 1
+# IP-CIDR: 1
+# IP6-CIDR: 1
 # TOTAL: 22
-# 用户提供的规则；完整保留所有匹配条件。
 
 # 核心域名（anthropic.com 已覆盖其所有子域名）
-host-suffix, anthropic.com, claude
-host-suffix, claude.ai, claude
-host-suffix, claude.com, claude
-host-suffix, clau.de, claude
-host-suffix, claudemcpclient.com, claude
-host-suffix, claudemcpcontent.com, claude
-host-suffix, claudeusercontent.com, claude
+HOST-SUFFIX,anthropic.com,claude
+HOST-SUFFIX,claude.ai,claude
+HOST-SUFFIX,claude.com,claude
+HOST-SUFFIX,clau.de,claude
+HOST-SUFFIX,claudemcpclient.com,claude
+HOST-SUFFIX,claudemcpcontent.com,claude
+HOST-SUFFIX,claudeusercontent.com,claude
 
 # CDN 和静态资源
-host, servd-anthropic-website.b-cdn.net, claude
-host, anthropic.com.cdn.cloudflare.net, claude
+HOST,servd-anthropic-website.b-cdn.net,claude
+HOST,anthropic.com.cdn.cloudflare.net,claude
 
 # 认证 / 内容
-host, anthropic.auth0.com, claude
-host, anthropic-com.ghost.io, claude
+HOST,anthropic.auth0.com,claude
+HOST,anthropic-com.ghost.io,claude
 
 # 监控和遥测（关键词规则也会匹配其他包含该词的域名）
-host-suffix, sentry.io, claude
-host-suffix, statsigapi.net, claude
-host, browser-intake-us5-datadoghq.com, claude
-host-keyword, datadog, claude
-host-keyword, sift, claude
+HOST-SUFFIX,sentry.io,claude
+HOST-SUFFIX,statsigapi.net,claude
+HOST,browser-intake-us5-datadoghq.com,claude
+HOST-KEYWORD,datadog,claude
+HOST-KEYWORD,sift,claude
 
 # 客服 / 第三方 widget
-host-suffix, intercom.io, claude
-host-suffix, intercomcdn.com, claude
-host, cdn.usefathom.com, claude
+HOST-SUFFIX,intercom.io,claude
+HOST-SUFFIX,intercomcdn.com,claude
+HOST,cdn.usefathom.com,claude
 
 # IP 段 / ASN 兜底（使用 Quantumult X 原生格式）
-ip-cidr, 160.79.104.0/21, claude
-ip6-cidr, 2607:6bc0::/32, claude
-ip-asn, 399358, claude
+IP-CIDR,160.79.104.0/21,claude
+IP6-CIDR,2607:6bc0::/32,claude
+IP-ASN,399358,claude
