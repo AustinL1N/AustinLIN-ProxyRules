@@ -1,0 +1,36 @@
+# NAME: Austin-PrivateRules
+# AUTHOR: AustinL1N
+# REPO: https://github.com/AustinL1N/AustinLIN-ProxyRules
+# UPDATED: 2026-10-08 16:44:10
+# HOST: 2
+# HOST-KEYWORD: 7
+# HOST-SUFFIX: 18
+# TOTAL: 27
+
+HOST-SUFFIX,wjkc.xyz,节点/规则更新
+HOST-SUFFIX,rutnzgnkphxs.sealosgzg.site,节点/规则更新
+HOST,ddgksf2013.top,节点/规则更新
+HOST-SUFFIX,valorant-api.com,外网
+HOST-SUFFIX,riotesports.com,外网
+HOST-SUFFIX,withpersona.com,AI
+HOST-SUFFIX,24bit.net,外网
+HOST-SUFFIX,mp3.pm,外网
+HOST-SUFFIX,gov.hk,外网
+HOST-SUFFIX,audio.com,外网
+HOST-SUFFIX,yifan.tv,外网
+HOST-SUFFIX,starbucks.com.hk,外网
+HOST-SUFFIX,movie6.com,外网
+HOST-SUFFIX,mbaas.mobile.medu.com,外网
+HOST-KEYWORD,glassdoor,外网
+HOST-KEYWORD,duosecurity,外网
+HOST-KEYWORD,bing,direct
+HOST-KEYWORD,icloud,direct
+HOST-KEYWORD,apple,direct
+HOST-SUFFIX,api.henrikdev.xyz,外网
+HOST-SUFFIX,nnyy.in,外网
+HOST,vpsxb.net,外网
+HOST-SUFFIX,hgc.com,外网
+HOST-SUFFIX,simworld.net,外网
+HOST-SUFFIX,three.com.hk,外网
+HOST-KEYWORD,mykeeta,外网
+HOST-KEYWORD,hsbc,direct

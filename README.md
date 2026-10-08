@@ -1,14 +1,16 @@
 # AustinLIN-ProxyRules
 
-个人维护的 Claude 分流规则，共 22 条，按用户提供的列表整理。
+个人维护的代理分流规则，按客户端和规则集分类：Claude 规则 22 条，Austin-PrivateRules 规则 27 条。
 
 ## 目录
 
 ```text
 AustinLIN-ProxyRules/
 ├── QuantumultX/
-│   └── Claude/
-│       └── Claude.list
+│   ├── Claude/
+│   │   └── Claude.list
+│   └── Austin-PrivateRules/
+│       └── Austin-PrivateRules.list
 ├── Clash/
 │   └── Claude/
 │       └── Claude.list
@@ -16,9 +18,10 @@ AustinLIN-ProxyRules/
 ```
 
 - [QuantumultX/Claude/Claude.list](QuantumultX/Claude/Claude.list)：使用 Quantumult X 原生三列格式：规则类型、匹配条件、策略。文件使用 `claude` 作为占位策略，订阅设置可覆盖为所需策略组。
+- [QuantumultX/Austin-PrivateRules/Austin-PrivateRules.list](QuantumultX/Austin-PrivateRules/Austin-PrivateRules.list)：个人规则 27 条，保留提供时的匹配顺序和策略组。
 - [Clash/Claude/Claude.list](Clash/Claude/Claude.list)：保留原始 `DOMAIN / DOMAIN-SUFFIX / DOMAIN-KEYWORD / IP` 格式及 `no-resolve` 参数，不写入策略组。
 
-## Quantumult X 订阅
+## Quantumult X Claude 订阅
 
 订阅地址：[Quantumult X Claude 规则](https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/refs/heads/main/QuantumultX/Claude/Claude.list)。
 
@@ -40,6 +43,22 @@ https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/refs/heads/main
 
 `QuantumultX/Claude/Claude.list` 是独立规则资源，不包含 `[filter_local]`、`[filter_remote]` 或最终直连规则。
 
+## Quantumult X Austin-PrivateRules 订阅
+
+订阅地址：[Austin-PrivateRules](https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/refs/heads/main/QuantumultX/Austin-PrivateRules/Austin-PrivateRules.list)。
+
+```text
+https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/refs/heads/main/QuantumultX/Austin-PrivateRules/Austin-PrivateRules.list
+```
+
+在 Quantumult X 中添加上述分流资源。该文件保留 `节点/规则更新`、`外网`、`AI` 和 `direct` 分组，使用文件内分组时请确保对应自定义策略组已存在。如需保留不同规则的原分组，不要为整个资源设置统一的 `force-policy`。
+
+可将下面一行加入现有配置的 `[filter_remote]` 段：
+
+```ini
+https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/refs/heads/main/QuantumultX/Austin-PrivateRules/Austin-PrivateRules.list, tag=Austin-PrivateRules, enabled=true
+```
+
 ## Clash / Mihomo 订阅
 
 规则地址：[Clash Claude 规则](https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/refs/heads/main/Clash/Claude/Claude.list)。
@@ -56,9 +75,9 @@ https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/refs/heads/main
 
 ## 维护
 
-编辑 GitHub 默认分支中对应客户端目录下的 `Claude/Claude.list` 并提交。在文件路径不变的情况下，订阅地址保持不变。客户端下次更新资源时获取新版本；需要立即生效时可手动更新资源。
+编辑 GitHub 默认分支中对应客户端及规则集目录下的 `.list` 文件并提交。在文件路径不变的情况下，订阅地址保持不变。客户端下次更新资源时获取新版本；需要立即生效时可手动更新资源。
 
-两种客户端格式为分别维护的文件，修改匹配条件时应同步更新，两者没有自动转换流程。
+Claude 的两种客户端格式为分别维护的文件，修改匹配条件时应同步更新，两者没有自动转换流程。Austin-PrivateRules 当前仅提供 Quantumult X 格式。
 
 ## 格式与范围说明
 
