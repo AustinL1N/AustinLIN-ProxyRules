@@ -1,11 +1,11 @@
 # NAME: Austin-PrivateRules
 # AUTHOR: AustinL1N
 # REPO: https://github.com/AustinL1N/AustinLIN-ProxyRules
-# UPDATED: 2026-10-08 16:55:22
+# UPDATED: 2026-10-10 16:06:50
 # HOST: 2
 # HOST-KEYWORD: 8
-# HOST-SUFFIX: 21
-# TOTAL: 31
+# HOST-SUFFIX: 22
+# TOTAL: 32
 
 HOST-SUFFIX,wjkc.xyz,节点/规则更新
 HOST-SUFFIX,rutnzgnkphxs.sealosgzg.site,节点/规则更新
@@ -38,3 +38,4 @@ HOST-KEYWORD,foodpanda,外网
 HOST-SUFFIX,deliveryhero.net,外网
 HOST-SUFFIX,deliveryhero.io,外网
 HOST-SUFFIX,fd-api.com,外网
+HOST-SUFFIX,yfamilys.com,外网
