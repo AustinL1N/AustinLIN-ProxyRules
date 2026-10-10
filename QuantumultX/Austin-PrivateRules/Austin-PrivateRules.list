@@ -1,11 +1,12 @@
 # NAME: Austin-PrivateRules
 # AUTHOR: AustinL1N
 # REPO: https://github.com/AustinL1N/AustinLIN-ProxyRules
-# UPDATED: 2026-10-10 16:06:50
+# UPDATED: 2026-10-10 16:54:20
 # HOST: 2
-# HOST-KEYWORD: 8
-# HOST-SUFFIX: 22
-# TOTAL: 32
+# HOST-KEYWORD: 17
+# HOST-SUFFIX: 35
+# IP-CIDR: 1
+# TOTAL: 55
 
 HOST-SUFFIX,wjkc.xyz,节点/规则更新
 HOST-SUFFIX,rutnzgnkphxs.sealosgzg.site,节点/规则更新
@@ -39,3 +40,34 @@ HOST-SUFFIX,deliveryhero.net,外网
 HOST-SUFFIX,deliveryhero.io,外网
 HOST-SUFFIX,fd-api.com,外网
 HOST-SUFFIX,yfamilys.com,外网
+
+# ================= Apple =================
+HOST-SUFFIX,mzstatic.com,direct
+HOST-SUFFIX,itunes.com,direct
+HOST-SUFFIX,me.com,direct
+HOST-SUFFIX,aaplimg.com,direct
+IP-CIDR,17.0.0.0/8,direct
+
+# ================= Microsoft =================
+# 账号 / 登录
+HOST-KEYWORD,microsoft,direct
+HOST-KEYWORD,msft,direct
+HOST-SUFFIX,live.com,direct
+HOST-SUFFIX,live.net,direct
+HOST-SUFFIX,msauth.net,direct
+HOST-SUFFIX,aka.ms,direct
+# Outlook / Office / Teams
+HOST-KEYWORD,outlook,direct
+HOST-KEYWORD,hotmail,direct
+HOST-KEYWORD,onenote,direct
+HOST-KEYWORD,sharepoint,direct
+HOST-SUFFIX,office.com,direct
+HOST-SUFFIX,office.net,direct
+HOST-SUFFIX,skype.com,direct
+# Edge / Bing
+HOST-KEYWORD,msedge,direct
+HOST-SUFFIX,msn.com,direct
+# OneDrive（直连不稳就删掉这组）
+HOST-KEYWORD,onedrive,direct
+HOST-KEYWORD,1drv,direct
+HOST-SUFFIX,sfx.ms,direct
