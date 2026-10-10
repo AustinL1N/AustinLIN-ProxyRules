@@ -1,7 +1,7 @@
 # NAME: Austin-PrivateRules
 # AUTHOR: AustinL1N
 # REPO: https://github.com/AustinL1N/AustinLIN-ProxyRules
-# UPDATED: 2026-10-10 16:54:20
+# UPDATED: 2026-10-10 17:00:37
 # HOST: 2
 # HOST-KEYWORD: 17
 # HOST-SUFFIX: 35
@@ -24,9 +24,6 @@ HOST-SUFFIX,movie6.com,外网
 HOST-SUFFIX,mbaas.mobile.medu.com,外网
 HOST-KEYWORD,glassdoor,外网
 HOST-KEYWORD,duosecurity,外网
-HOST-KEYWORD,bing,direct
-HOST-KEYWORD,icloud,direct
-HOST-KEYWORD,apple,direct
 HOST-SUFFIX,api.henrikdev.xyz,外网
 HOST-SUFFIX,nnyy.in,外网
 HOST,vpsxb.net,外网
@@ -42,6 +39,8 @@ HOST-SUFFIX,fd-api.com,外网
 HOST-SUFFIX,yfamilys.com,外网
 
 # ================= Apple =================
+HOST-KEYWORD,apple,direct
+HOST-KEYWORD,icloud,direct
 HOST-SUFFIX,mzstatic.com,direct
 HOST-SUFFIX,itunes.com,direct
 HOST-SUFFIX,me.com,direct
@@ -56,6 +55,7 @@ HOST-SUFFIX,live.com,direct
 HOST-SUFFIX,live.net,direct
 HOST-SUFFIX,msauth.net,direct
 HOST-SUFFIX,aka.ms,direct
+
 # Outlook / Office / Teams
 HOST-KEYWORD,outlook,direct
 HOST-KEYWORD,hotmail,direct
@@ -64,9 +64,12 @@ HOST-KEYWORD,sharepoint,direct
 HOST-SUFFIX,office.com,direct
 HOST-SUFFIX,office.net,direct
 HOST-SUFFIX,skype.com,direct
+
 # Edge / Bing
+HOST-KEYWORD,bing,direct
 HOST-KEYWORD,msedge,direct
 HOST-SUFFIX,msn.com,direct
+
 # OneDrive（直连不稳就删掉这组）
 HOST-KEYWORD,onedrive,direct
 HOST-KEYWORD,1drv,direct
