@@ -1,6 +1,6 @@
 # AustinLIN-ProxyRules
 
-个人维护的代理分流规则，按客户端和规则集分类：Claude 规则 22 条，Austin-PrivateRules 规则 55 条。
+个人维护的代理分流规则，按客户端和规则集分类：Claude 规则 22 条，Austin-PrivateRules 规则 52 条。
 
 ## 目录
 
@@ -18,7 +18,7 @@ AustinLIN-ProxyRules/
 ```
 
 - [QuantumultX/Claude/Claude.list](QuantumultX/Claude/Claude.list)：使用 Quantumult X 原生三列格式：规则类型、匹配条件、策略。文件使用 `claude` 作为占位策略，订阅设置可覆盖为所需策略组。
-- [QuantumultX/Austin-PrivateRules/Austin-PrivateRules.list](QuantumultX/Austin-PrivateRules/Austin-PrivateRules.list)：个人规则 55 条，Apple / Microsoft 相关规则按注释区块分类，保留各条规则的策略组。
+- [QuantumultX/Austin-PrivateRules/Austin-PrivateRules.list](QuantumultX/Austin-PrivateRules/Austin-PrivateRules.list)：个人规则 52 条，Apple / Microsoft 相关规则按注释区块分类，保留各条规则的策略组。
 - [Clash/Claude/Claude.list](Clash/Claude/Claude.list)：保留原始 `DOMAIN / DOMAIN-SUFFIX / DOMAIN-KEYWORD / IP` 格式及 `no-resolve` 参数，不写入策略组。
 
 ## Quantumult X Claude 订阅
@@ -51,7 +51,7 @@ https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/refs/heads/main
 https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/refs/heads/main/QuantumultX/Austin-PrivateRules/Austin-PrivateRules.list
 ```
 
-在 Quantumult X 中添加上述分流资源。该文件保留 `节点/规则更新`、`外网`、`AI` 和 `direct` 分组，使用文件内分组时请确保对应自定义策略组已存在。如需保留不同规则的原分组，不要为整个资源设置统一的 `force-policy`。
+在 Quantumult X 中添加上述分流资源。该文件保留 `外网`、`AI` 和 `direct` 分组，使用文件内分组时请确保对应自定义策略组已存在。如需保留不同规则的原分组，不要为整个资源设置统一的 `force-policy`。
 
 可将下面一行加入现有配置的 `[filter_remote]` 段：
 

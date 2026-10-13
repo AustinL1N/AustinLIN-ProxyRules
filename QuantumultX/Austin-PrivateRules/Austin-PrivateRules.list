@@ -1,16 +1,13 @@
 # NAME: Austin-PrivateRules
 # AUTHOR: AustinL1N
 # REPO: https://github.com/AustinL1N/AustinLIN-ProxyRules
-# UPDATED: 2026-10-10 17:00:37
-# HOST: 2
+# UPDATED: 2026-10-13 14:03:45
+# HOST: 1
 # HOST-KEYWORD: 17
-# HOST-SUFFIX: 35
+# HOST-SUFFIX: 33
 # IP-CIDR: 1
-# TOTAL: 55
+# TOTAL: 52
 
-HOST-SUFFIX,wjkc.xyz,节点/规则更新
-HOST-SUFFIX,rutnzgnkphxs.sealosgzg.site,节点/规则更新
-HOST,ddgksf2013.top,节点/规则更新
 HOST-SUFFIX,valorant-api.com,外网
 HOST-SUFFIX,riotesports.com,外网
 HOST-SUFFIX,withpersona.com,AI
