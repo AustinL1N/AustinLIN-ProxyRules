@@ -1,12 +1,12 @@
 # NAME: Austin-PrivateRules
 # AUTHOR: AustinL1N
 # REPO: https://github.com/AustinL1N/AustinLIN-ProxyRules
-# UPDATED: 2026-11-07 23:38:00
+# UPDATED: 2026-11-14 17:10:10
 # HOST: 1
 # HOST-KEYWORD: 17
-# HOST-SUFFIX: 39
+# HOST-SUFFIX: 41
 # IP-CIDR: 2
-# TOTAL: 59
+# TOTAL: 61
 
 HOST-SUFFIX,valorant-api.com,外网
 HOST-SUFFIX,riotesports.com,外网
@@ -37,6 +37,10 @@ HOST-SUFFIX,yfamilys.com,外网
 HOST-SUFFIX,gaodun.com,direct
 
 HOST-SUFFIX,moneyback.com.hk,外网
+
+# proxy
+HOST-SUFFIX,saily.com,proxy
+HOST-SUFFIX,dctdp.com,proxy
 
 # 直连
 HOST-SUFFIX,wise.com,direct
