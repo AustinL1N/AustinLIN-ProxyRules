@@ -1,7 +1,7 @@
 # NAME: Austin-PrivateRules
 # AUTHOR: AustinL1N
 # REPO: https://github.com/AustinL1N/AustinLIN-ProxyRules
-# UPDATED: 2026-11-14 17:11:40
+# UPDATED: 2026-11-14 17:14:16
 # HOST: 1
 # HOST-KEYWORD: 17
 # HOST-SUFFIX: 41
@@ -37,8 +37,6 @@ HOST-SUFFIX,yfamilys.com,外网
 HOST-SUFFIX,gaodun.com,direct
 
 HOST-SUFFIX,moneyback.com.hk,外网
-
-# 外网
 HOST-SUFFIX,saily.com,外网
 HOST-SUFFIX,dctdp.com,外网
 
