@@ -51,7 +51,7 @@ https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/refs/heads/main
 https://raw.githubusercontent.com/AustinL1N/AustinLIN-ProxyRules/refs/heads/main/QuantumultX/Austin-PrivateRules/Austin-PrivateRules.list
 ```
 
-在 Quantumult X 中添加上述分流资源。该文件保留 `外网`、`AI`、`proxy` 和 `direct` 分组，使用文件内分组时请确保对应自定义策略组已存在。如需保留不同规则的原分组，不要为整个资源设置统一的 `force-policy`。
+在 Quantumult X 中添加上述分流资源。该文件保留 `外网`、`AI` 和 `direct` 分组，使用文件内分组时请确保对应自定义策略组已存在。如需保留不同规则的原分组，不要为整个资源设置统一的 `force-policy`。
 
 可将下面一行加入现有配置的 `[filter_remote]` 段：
 
